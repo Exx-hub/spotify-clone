@@ -1,0 +1,85 @@
+.footer {
+	position: fixed;
+	bottom: 0;
+	background: #212121;
+	width: 97%;
+	height: 65px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	color: #4d4b4b;
+}
+
+.footer__left {
+	flex: 0.3;
+	display: flex;
+	align-items: center;
+	max-width: 400px;
+}
+.footer__albumImage {
+	height: 60px;
+	width: 60px;
+	/* padding: 0 20px; */
+	margin-right: 20px;
+	object-fit: contain;
+}
+.footer__songInfo {
+	padding: 0 10px;
+}
+.footer__songInfo > h4 {
+	color: #c9cdd4;
+	margin-bottom: 5px;
+}
+.footer__songInfo > p {
+	font-size: 13px;
+}
+.footer__heartIcon {
+	margin-left: 30px;
+	padding: 0 20px;
+}
+
+.footer__airIcon {
+	padding: 0 20px;
+}
+.footer__center {
+	flex: 0.4;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 100px;
+	align-items: center;
+	max-width: 300px;
+	min-width: 200px;
+}
+.footer__right {
+	flex: 0.3;
+	display: flex;
+	align-items: center;
+	min-width: 300px;
+}
+
+.footer__green:hover,
+.footer__icon:hover {
+	transition: transform 0.2s ease-in-out;
+	transform: scale(1.3) !important;
+	color: white;
+	cursor: pointer;
+}
+.footer__green {
+	color: #1ed15e;
+}
+.footer__right * .MuiSlider-root {
+	color: #1ed15e;
+}
+
+@media screen and (max-width: 824px) {
+	.footer__right {
+		display: none;
+	}
+	.footer__center {
+		flex: 0.5;
+	}
+	.footer__left {
+		max-width: none;
+		flex: 0.5;
+	}
+}
